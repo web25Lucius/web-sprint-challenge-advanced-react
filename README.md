@@ -29,15 +29,40 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+I've been solely building in the constructor- though it's not a rule.  
+
+
+this.state = {
+  name: value, 
+  name2: value2,
+}
+
+using this.state or this.setState allows you to use props to access it.  
+this.state.name === props.name
+
 
 2. Describe the different phases of the component lifecycle.
+didMount, didUpdate, willUnmount
+didMount- render 
+didUpdate- refresh
+willUnmount- cleanup
 
 3. Demonstrate an understanding of class component lifecycle methods.
-
+Anything you want to render with the page or before a refresh you'll put in didMount.  
+Anything you want on the page after it has refreshed will be in didUpdate.  Axios calls should be in one of these two. 
+willUnmount is used for cleanup.  The first two are like using useEffect.  
 4. Define stateful logic.
+Logic that is functional- not for ui.  It returns behavior. 
 
 5. Describe how to test a React component with React Testing Library.
+describe the test
+Set up how the test should execute. 
+1)Arrange 
 
+Add a condition that lets us know if the test passes. 
+2)Act
+
+3)Assert- verify the test expectations were satisfied. 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
 ## Instructions

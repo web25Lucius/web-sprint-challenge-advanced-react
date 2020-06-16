@@ -6,12 +6,12 @@ import CheckoutForm from "./CheckoutForm";
 
 test("form header renders", () => {
    const {getByText} = render(<App />);
-   expect(getByText(/Checkout Form/i));
+   getByText(/Checkout Form/i);
 
 });
     
 test("form shows success message on submit with form details", () => {
     const {getByTestId} = render(<App />);
     
-    expect(getByTestId(/successMessage/i));
+    getByTestId(/successMessage/i);
 });
