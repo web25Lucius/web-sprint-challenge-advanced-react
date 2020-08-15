@@ -29,14 +29,28 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+   using the keyword this you can point to state from your component.  This allows you to set state and access state in your component.  
 
 2. Describe the different phases of the component lifecycle.
+ 
+   didMount- render 
+   didUpdate- refresh 
+   willUnmount- cleanup
 
 3. Demonstrate an understanding of class component lifecycle methods.
+Anything you want to render with the page or before a refresh you'll put in didMount.
+Anything you want on the page after it has refreshed will be in didUpdate. Axios calls should be in one of these two. willUnmount is used for cleanup. The first two are like using useEffect.
+
 
 4. Define stateful logic.
+   Logic that returns behavior and is functional. 
 
 5. Describe how to test a React component with React Testing Library.
+  
+  Describe the test Set up how the test should execute. 
+  1. Arrange -Add a condition that lets us know if the test passes. 
+  2. Act -invoke the tested logic
+  3. Assert- verify the test expectations were satisfied. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -54,22 +68,22 @@ _Please follow the setup instructions closely so that you can get everything up 
 
 **Basic set up**
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
 
 **Starting the server**
 
-- [ ] Run `npm install` to download dependencies for the server.
-- [ ] Run the server using `npm start`.
-- [ ] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
+- [x] Run `npm install` to download dependencies for the server.
+- [x] Run the server using `npm start`.
+- [x] Open a new browser tab and navigate to `http://localhost:3333/plants` - if you see a JSON object with plants data, then you know the server is running 👍
 
 **Starting the React app**
 
-- [ ] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
-- [ ] Still inside the `client` folder run `npm run start` to run the client application.
-- [ ] Your browser should open up the project as normal
+- [x] In a separate terminal cd into the `client` folder and run `npm install` to download dependencies.
+- [x] Still inside the `client` folder run `npm run start` to run the client application.
+- [x] Your browser should open up the project as normal
 
 **Starting your test runner**
 
